@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:wght@600&display=swap");
+
+:root {
+  --primary: #ff4f18;
+  --primary-light: #fff1ec;
+  --primary-dark: #cc3c10;
+  --dark: #1a1a2e;
+  --text: #2d2d44;
+  --text-muted: #7a7a9a;
+  --bg: #f9f7f4;
+  --white: #ffffff;
+  --border: #ebebeb;
+  --shadow: 0 2px 20px rgba(0,0,0,0.07);
+  --shadow-hover: 0 8px 32px rgba(255,79,24,0.15);
+  --radius: 16px;
+  --radius-sm: 8px;
+  --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'DM Sans', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+a { text-decoration: none; color: inherit; }
+
+/* Desktop */
+.app { width: 88%; max-width: 1400px; margin: auto; }
+
+/* Tablet */
+@media (max-width: 1024px) { .app { width: 92%; } }
+
+/* Mobile */
+@media (max-width: 600px) { .app { width: 95%; } }
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(12px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideUp {
+  0% { opacity: 0; transform: translateY(24px); }
+  100% { opacity: 1; transform: translateY(0); }
+}

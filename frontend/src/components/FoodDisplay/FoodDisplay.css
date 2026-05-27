@@ -1,0 +1,36 @@
+/* ===== FOOD DISPLAY ===== */
+.food-display { margin-top: 30px; }
+
+.food-display h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: max(1.8vw, 22px);
+  font-weight: 600;
+  color: var(--text);
+  letter-spacing: -0.4px;
+}
+
+/* Desktop: 4 columns */
+.food-display-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 30px;
+  gap: 24px;
+  row-gap: 32px;
+}
+
+/* Tablet: 3 columns */
+@media (max-width: 1024px) {
+  .food-display-list { grid-template-columns: repeat(3, 1fr); gap: 18px; row-gap: 24px; }
+  .food-display h2 { font-size: 1.5rem; }
+}
+
+/* Small Tablet: 2 columns */
+@media (max-width: 768px) {
+  .food-display-list { grid-template-columns: repeat(2, 1fr); gap: 14px; row-gap: 20px; }
+}
+
+/* Mobile: 1 column */
+@media (max-width: 480px) {
+  .food-display-list { grid-template-columns: 1fr; gap: 14px; row-gap: 16px; }
+  .food-display h2 { font-size: 1.3rem; }
+}

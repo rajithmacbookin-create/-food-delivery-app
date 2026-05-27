@@ -1,0 +1,20 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 4%;
+}
+
+.navbar .logo {
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: tomato;
+}
+.navbar .admin {
+  font-weight: 600;
+}
+
+.navbar .profile {
+  width: 40px;
+}

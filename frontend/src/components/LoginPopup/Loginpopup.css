@@ -1,0 +1,106 @@
+/* ===== LOGIN POPUP ===== */
+.login-popup {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(26,26,46,0.7);
+  backdrop-filter: blur(4px);
+  display: grid;
+}
+
+.login-popup-container {
+  place-self: center;
+  width: max(22vw, 340px);
+  color: var(--text-muted);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  padding: 32px 36px;
+  border-radius: 20px;
+  font-size: 14px;
+  animation: fadeIn 0.3s ease both;
+  box-shadow: 0 24px 60px rgba(0,0,0,0.2);
+}
+
+.login-popup-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text);
+}
+
+.login-popup-title h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.login-popup-title img {
+  width: 14px;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity var(--transition);
+}
+
+.login-popup-title img:hover { opacity: 1; }
+
+.login-popup-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.login-popup-inputs input {
+  outline: none;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  font-size: 14px;
+  transition: border-color var(--transition);
+  color: var(--text);
+}
+
+.login-popup-inputs input:focus { border-color: var(--primary); }
+
+.login-popup-container button {
+  border: none;
+  padding: 13px;
+  border-radius: var(--radius-sm);
+  color: white;
+  background-color: var(--primary);
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.login-popup-container button:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-1px);
+}
+
+.login-popup-condition {
+  display: flex;
+  align-items: start;
+  gap: 8px;
+  margin-top: -8px;
+  font-size: 13px;
+}
+
+.login-popup-condition input { margin-top: 3px; }
+.login-popup p span { color: var(--primary); font-weight: 500; cursor: pointer; }
+.login-popup p span:hover { text-decoration: underline; }
+
+/* === MOBILE === */
+@media (max-width: 600px) {
+  .login-popup-container {
+    width: 90vw;
+    padding: 24px 22px;
+    border-radius: 16px;
+  }
+  .login-popup-title h2 { font-size: 1.2rem; }
+}

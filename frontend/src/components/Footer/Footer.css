@@ -1,0 +1,119 @@
+/* ===== FOOTER ===== */
+.footer {
+  color: #a0a0b8;
+  background-color: var(--dark);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 80px 8vw 40px;
+  margin-top: 100px;
+}
+
+/* Desktop: 3 columns */
+.footer-content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 80px;
+}
+
+.footer-content-left,
+.footer-content-right,
+.footer-content-center {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+
+.footer-content-left .logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.footer-content-left p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #6e6e88;
+  max-width: 280px;
+}
+
+.footer-content-left li,
+.footer-content-right li,
+.footer-content-center li {
+  list-style: none;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: color var(--transition);
+}
+
+.footer-content-left li:hover,
+.footer-content-right li:hover,
+.footer-content-center li:hover { color: white; }
+
+.footer-content-right h2,
+.footer-content-center h2 {
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.footer-social-icons img {
+  width: 36px;
+  margin-right: 12px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity var(--transition);
+}
+
+.footer-social-icons img:hover { opacity: 1; }
+
+.footer hr {
+  width: 100%;
+  height: 1px;
+  margin: 20px 0;
+  background-color: #2d2d44;
+  border: none;
+}
+
+.footer-copyright { font-size: 13px; color: #5a5a72; }
+
+/* === TABLET (max 1024px) === */
+@media (max-width: 1024px) {
+  .footer { padding: 60px 6vw 30px; }
+  .footer-content { gap: 40px; }
+}
+
+/* === SMALL TABLET (max 768px) === */
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  .footer-content-left {
+    grid-column: 1 / -1;
+  }
+}
+
+/* === MOBILE (max 600px) === */
+@media (max-width: 600px) {
+  .footer {
+    padding: 50px 5vw 30px;
+    margin-top: 60px;
+    gap: 14px;
+  }
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+  .footer-content-left p { max-width: 100%; }
+  .footer-copyright { text-align: center; font-size: 12px; }
+  .footer-social-icons img { width: 30px; }
+}

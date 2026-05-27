@@ -1,0 +1,48 @@
+/* ===== SKELETON LOADER ===== */
+.skeleton {
+  background: white;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  position: relative;
+  overflow: hidden;
+}
+
+.skeleton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.6) 50%, transparent 100%);
+  animation: shimmer 1.4s infinite;
+}
+
+.skeleton .skeleton-image,
+.skeleton .skeleton-text {
+  position: relative;
+  z-index: 1;
+  background: #f0ede8;
+  border-radius: 6px;
+}
+
+.skeleton .skeleton-image { width: 100%; height: 200px; border-radius: var(--radius) var(--radius) 0 0; }
+.skeleton .skeleton-text { margin: 10px 16px; }
+.skeleton .skeleton-name-rating { height: 18px; width: 60%; }
+.skeleton .skeleton-desc { height: 13px; width: 80%; margin-top: 8px; }
+.skeleton .skeleton-price { height: 20px; width: 40%; margin-top: 10px; margin-bottom: 16px; }
+
+@keyframes shimmer {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+/* === TABLET === */
+@media (max-width: 1024px) {
+  .skeleton .skeleton-image { height: 180px; }
+}
+
+/* === MOBILE === */
+@media (max-width: 600px) {
+  .skeleton .skeleton-image { height: 160px; }
+}

@@ -1,15 +1,15 @@
 <div align="center">
-    <h1 style="color: tomato;">MernEats.com</h1>
+    <h1 style="color: tomato;">Tomoto.com</h1>
 
-This application is deployed on Vercel. Please check it out [here](https://mern-eats.vercel.app).
+This application is deployed on Vercel. Please check it out [here](https://Tomoto.vercel.app).
 
-![MernEats](frontend/src/assets/merneats-thumbnail.png)
+![Tomoto](frontend/src/assets/merneats-thumbnail.png)
 
 </div>
 
 ## Introduction
 
-Mern-Eats.com is a full-stack web application that enables users to browse through a variety of dishes, place orders, track their order in real time and get food delivered to their doorstep efficiently. The application leverages the power of the MERN stack (MongoDB, Express.js, React.js, Node.js) to ensure a seamless user experience and robust performance.
+Tomoto.com is a full-stack web application that enables users to browse through a variety of dishes, place orders, track their order in real time and get food delivered to their doorstep efficiently. The application leverages the power of the MERN stack (MongoDB, Express.js, React.js, Node.js) to ensure a seamless user experience and robust performance.
 
 ## 🖥️ Tech Stack
 
@@ -119,19 +119,7 @@ Here are listed all available API endpoints along with a brief description of ea
 
 ## Admin Pannel Preview
 
-![Admin-Pannel](frontend/src/assets/merneats-admin-thumbnail.png)
-
-## 👤 Developer
-
-[RAJEEV KUMAR SUDHANSU](https://github.com/rajeevkrS)
-
-## 📬 Contact
-
-If you want to contact me, you can reach me through below handles.
-
-<a href="https://www.linkedin.com/in/rajeev-kumar-sudhansu-b52027326/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-
-<a href="mailto:rajeevkumarr1221@gmail.com"><img  alt="Gmail" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+![Admin-Pannel](frontend/src/assets/Tomoto-admin-thumbnail.png)
 
 ## Contribution:
 

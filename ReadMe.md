@@ -3,7 +3,7 @@
 
 This application is deployed on Vercel. Please check it out [here](https://Tomoto.vercel.app).
 
-![Tomoto](frontend/src/assets/merneats-thumbnail.png)
+![Tomoto](Screenshot 2026-05-28 091758.png)
 
 </div>
 

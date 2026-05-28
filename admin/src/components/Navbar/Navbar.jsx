@@ -7,7 +7,7 @@ const Navbar = () => {
     <div className="navbar">
       <div>
         <a href="/">
-          <h2 className="logo">MernEats.com</h2>
+          <h2 className="logo">Tomoto</h2>
           <span className="admin">Admin Panel</span>
         </a>
       </div>

@@ -1,20 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700&family=DM+Sans:wght@400;500&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 4%;
+  padding: 14px 5%;
+  background: #fff;
+  border-bottom: 1px solid #f0ede8;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  font-family: 'DM Sans', sans-serif;
 }
 
 .navbar .logo {
-  font-size: 26px;
+  font-family: 'Syne', sans-serif;
+  font-size: 22px;
   font-weight: 700;
-  letter-spacing: -0.025em;
-  color: tomato;
+  color: #d44a1a;
+  letter-spacing: -0.03em;
 }
+
 .navbar .admin {
-  font-weight: 600;
+  font-size: 11px;
+  font-weight: 500;
+  color: #999;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-top: 2px;
+  display: block;
 }
 
 .navbar .profile {
-  width: 40px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #f0ede8;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.navbar .profile:hover {
+  border-color: #d44a1a;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 12px 4%;
+  }
+  .navbar .logo {
+    font-size: 18px;
+  }
 }

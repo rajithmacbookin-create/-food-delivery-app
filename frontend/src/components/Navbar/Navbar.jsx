@@ -39,7 +39,7 @@ const Navbar = ({ setShowLogin }) => {
   return (
     <div className="navbar" ref={navRef}>
       <Link to={"/"} className="logo">
-        MernEats.com
+        Tomoto.com
       </Link>
 
       <ul className="navbar-menu">

@@ -7,7 +7,7 @@ const Footer = () => {
     <div className="footer" id="footer">
       <div className="footer-content">
         <div className="footer-content-left">
-          <h1 className="logo">MernEats.com</h1>
+          <h1 className="logo">Tomoto.com</h1>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia
             maxime, laudantium repellendus blanditiis hic maiores id eligendi
